@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="FreeCrmAutomationTestSuite" parallel="tests"
+	thread-count="2">
+	<listeners>
+		<listener class-name="com.crm.qa.util.TestNGRetryAnalyzerListener" />
+	</listeners>
+	<test name="LaunchPageTest" parallel="tests" thread-count="2">
+		<parameter name="browserName" value="chromeheadless" />
+		<classes>
+			<class name="com.crm.qa.testcases.LaunchPageTest" />
+		</classes>
+	</test>
+		<test name="NewContactPageTest" parallel="tests" thread-count="2">
+		<parameter name="browserName" value="chromeheadless" />
+		<classes>
+			<class name="com.crm.qa.testcases.NewContactPageTest" />
+		</classes>
+	</test>
+	<test name="LoginPageTest" parallel="tests" thread-count="2">
+		<parameter name="browserName" value="chromeheadless" />
+		<classes>
+			<class name="com.crm.qa.testcases.LoginPageTest" />
+		</classes>
+	</test>
+	<test name="ContactsPageTest" parallel="tests" thread-count="2">
+		<parameter name="browserName" value="chromeheadless" />
+		<classes>
+			<class name="com.crm.qa.testcases.ContactsPageTest" />
+		</classes>
+	</test>
+</suite>

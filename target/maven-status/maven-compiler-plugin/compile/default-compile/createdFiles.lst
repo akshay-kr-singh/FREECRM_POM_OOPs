@@ -1,0 +1,14 @@
+com\crm\qa\pages\ResetPasswordPage.class
+com\crm\qa\pages\ContactsPage.class
+com\crm\qa\pages\FixedLeftPanel.class
+com\crm\qa\pages\HomePage.class
+com\crm\qa\pages\BasePage.class
+com\crm\qa\pages\LoginPage.class
+com\crm\qa\pages\Page.class
+com\crm\qa\pages\LaunchPage.class
+com\crm\qa\testdata\FreeCrmTestData.class
+com\crm\qa\util\TestUtil.class
+com\crm\qa\pages\NewContactPage.class
+com\crm\qa\pages\SignUpPage.class
+com\crm\qa\util\DataDrivenUtil.class
+com\crm\qa\util\TestNGBasicListener.class
