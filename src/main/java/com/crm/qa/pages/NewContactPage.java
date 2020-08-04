@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import com.crm.qa.util.DataTable;
+
 public class NewContactPage extends BasePage {
 
 	public NewContactPage(WebDriver driver) {
@@ -38,4 +40,5 @@ public class NewContactPage extends BasePage {
 			populateField(lastName, ln);
 			performClick(saveBtn);	
 	}
+	
 }

@@ -48,7 +48,7 @@
           </li>
             <li class="m-r-10">
                 <a href="#">
-                    <span class="badge badge-primary">Jul 28, 2020 12:29:03 PM</span>
+                    <span class="badge badge-primary">Jul 29, 2020 12:59:28 PM</span>
                 </a>
             </li>
         </ul>
@@ -64,7 +64,15 @@
           <span class="title">Tests</span>
         </a>
       </li>
-            <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+            <li class="nav-item dropdown" onclick="toggleView('exception-view')">
+        <a id="nav-ex" class="dropdown-toggle" href="exception.html">
+          <span class="icon-holder">
+            <i class="fa fa-bug"></i>
+          </span>
+          <span class="title">Exception</span>
+        </a>
+      </li>
+      <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
         <a id="nav-dashboard" class="dropdown-toggle" href="dashboard.html">
           <span class="icon-holder">
             <i class="fa fa-bar-chart"></i>
@@ -92,12 +100,12 @@
 					<i class="fa fa-exclamation-circle"></i>
 					</a>
 					<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-						<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success pull-right"></span></a>
+						
+						<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger pull-right"></span></a>
 						
 						
 						
 						
-						<a class="dropdown-item" status="skip" href="#"><span>Skip</span><span class="status warning pull-right"></span></a>
 						<div class="dropdown-divider"></div>
 						<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 					</ul>
@@ -106,712 +114,28 @@
 		</div>
 		<div class="test-list-wrapper scrollable">
 			<ul class="test-list-item">
-				<li class="test-item"  status="pass" test-id="1"
+				<li class="test-item"  status="fail" test-id="1"
 					author=""
 					tag=""
 					device="">
-					<div class="status-avatar pass-bg">
-						<i class="fa fa-check text-white"></i>
-					</div>
-					<div class="open-test">
-						<div class="test-detail">
-							<p class="name">launchPageUrlTest</p>
-							<p class="duration text-sm">0h 0m 1s+207ms</p>
-							<span class="datetime">12:29:41 PM</span>
-						</div>
-					</div>
-					<div class="test-contents d-none">
-						<div class="detail-head">
-							<div class="p-v-10 d-inline-block">
-								<div class="info">
-									<h5 class="test-status text-pass">launchPageUrlTest</h5>
-									<span class='badge badge-success'>07.28.2020 12:29:41</span>
-									<span class='badge badge-danger'>07.28.2020 12:29:42</span>
-									<span class='badge badge-default'>0h 0m 1s+207ms</span>
-								</div>
-								<div class="m-t-10 m-l-5">
-									
-								</div>
-							</div>
-						</div>
-<div class="detail-body mt-4">                                              
-<table class="table table-sm">
-	<thead><tr>
-		<th class="status-col">Status</th>
-		<th class="timestamp-col">Timestamp</th>
-		<th class="details-col">Details</th>
-	</tr></thead>
-	<tbody>
-			<tr class="event-row">
-				<td><i class="fa fa-check text-pass"></i></td>
-				<td>12:29:42 PM</td>
-				<td>
-						Test Passed
-				</td>
-			</tr>
-	</tbody>
-</table>
-</div>
-<div class="detail-foot">
-	<ul class="attachments">
-			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\projects\POM_With_OOPs\screenshot\launchPageUrlTest.png' src='C:\projects\POM_With_OOPs\screenshot\launchPageUrlTest.png'>
-	</ul>
-</div>
-					</div>
-				</li>
-				<li class="test-item"  status="pass" test-id="2"
-					author=""
-					tag=""
-					device="">
-					<div class="status-avatar pass-bg">
-						<i class="fa fa-check text-white"></i>
-					</div>
-					<div class="open-test">
-						<div class="test-detail">
-							<p class="name">newContactPageUrlTest</p>
-							<p class="duration text-sm">0h 1m 7s+416ms</p>
-							<span class="datetime">12:29:47 PM</span>
-						</div>
-					</div>
-					<div class="test-contents d-none">
-						<div class="detail-head">
-							<div class="p-v-10 d-inline-block">
-								<div class="info">
-									<h5 class="test-status text-pass">newContactPageUrlTest</h5>
-									<span class='badge badge-success'>07.28.2020 12:29:47</span>
-									<span class='badge badge-danger'>07.28.2020 12:30:55</span>
-									<span class='badge badge-default'>0h 1m 7s+416ms</span>
-								</div>
-								<div class="m-t-10 m-l-5">
-									
-								</div>
-							</div>
-						</div>
-<div class="detail-body mt-4">                                              
-<table class="table table-sm">
-	<thead><tr>
-		<th class="status-col">Status</th>
-		<th class="timestamp-col">Timestamp</th>
-		<th class="details-col">Details</th>
-	</tr></thead>
-	<tbody>
-			<tr class="event-row">
-				<td><i class="fa fa-check text-pass"></i></td>
-				<td>12:30:55 PM</td>
-				<td>
-						Test Passed
-				</td>
-			</tr>
-	</tbody>
-</table>
-</div>
-<div class="detail-foot">
-	<ul class="attachments">
-			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\projects\POM_With_OOPs\screenshot\newContactPageUrlTest.png' src='C:\projects\POM_With_OOPs\screenshot\newContactPageUrlTest.png'>
-	</ul>
-</div>
-					</div>
-				</li>
-				<li class="test-item"  status="pass" test-id="3"
-					author=""
-					tag=""
-					device="">
-					<div class="status-avatar pass-bg">
-						<i class="fa fa-check text-white"></i>
-					</div>
-					<div class="open-test">
-						<div class="test-detail">
-							<p class="name">launchPageTitleTest</p>
-							<p class="duration text-sm">0h 0m 0s+682ms</p>
-							<span class="datetime">12:30:11 PM</span>
-						</div>
-					</div>
-					<div class="test-contents d-none">
-						<div class="detail-head">
-							<div class="p-v-10 d-inline-block">
-								<div class="info">
-									<h5 class="test-status text-pass">launchPageTitleTest</h5>
-									<span class='badge badge-success'>07.28.2020 12:30:11</span>
-									<span class='badge badge-danger'>07.28.2020 12:30:12</span>
-									<span class='badge badge-default'>0h 0m 0s+682ms</span>
-								</div>
-								<div class="m-t-10 m-l-5">
-									
-								</div>
-							</div>
-						</div>
-<div class="detail-body mt-4">                                              
-<table class="table table-sm">
-	<thead><tr>
-		<th class="status-col">Status</th>
-		<th class="timestamp-col">Timestamp</th>
-		<th class="details-col">Details</th>
-	</tr></thead>
-	<tbody>
-			<tr class="event-row">
-				<td><i class="fa fa-check text-pass"></i></td>
-				<td>12:30:12 PM</td>
-				<td>
-						Test Passed
-				</td>
-			</tr>
-	</tbody>
-</table>
-</div>
-<div class="detail-foot">
-	<ul class="attachments">
-			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\projects\POM_With_OOPs\screenshot\launchPageTitleTest.png' src='C:\projects\POM_With_OOPs\screenshot\launchPageTitleTest.png'>
-	</ul>
-</div>
-					</div>
-				</li>
-				<li class="test-item"  status="pass" test-id="4"
-					author=""
-					tag=""
-					device="">
-					<div class="status-avatar pass-bg">
-						<i class="fa fa-check text-white"></i>
-					</div>
-					<div class="open-test">
-						<div class="test-detail">
-							<p class="name">companyLogoDisplayTest</p>
-							<p class="duration text-sm">0h 0m 2s+470ms</p>
-							<span class="datetime">12:30:39 PM</span>
-						</div>
-					</div>
-					<div class="test-contents d-none">
-						<div class="detail-head">
-							<div class="p-v-10 d-inline-block">
-								<div class="info">
-									<h5 class="test-status text-pass">companyLogoDisplayTest</h5>
-									<span class='badge badge-success'>07.28.2020 12:30:39</span>
-									<span class='badge badge-danger'>07.28.2020 12:30:42</span>
-									<span class='badge badge-default'>0h 0m 2s+470ms</span>
-								</div>
-								<div class="m-t-10 m-l-5">
-									
-								</div>
-							</div>
-						</div>
-<div class="detail-body mt-4">                                              
-<table class="table table-sm">
-	<thead><tr>
-		<th class="status-col">Status</th>
-		<th class="timestamp-col">Timestamp</th>
-		<th class="details-col">Details</th>
-	</tr></thead>
-	<tbody>
-			<tr class="event-row">
-				<td><i class="fa fa-check text-pass"></i></td>
-				<td>12:30:42 PM</td>
-				<td>
-						Test Passed
-				</td>
-			</tr>
-	</tbody>
-</table>
-</div>
-<div class="detail-foot">
-	<ul class="attachments">
-			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\projects\POM_With_OOPs\screenshot\companyLogoDisplayTest.png' src='C:\projects\POM_With_OOPs\screenshot\companyLogoDisplayTest.png'>
-	</ul>
-</div>
-					</div>
-				</li>
-				<li class="test-item"  status="pass" test-id="5"
-					author=""
-					tag=""
-					device="">
-					<div class="status-avatar pass-bg">
-						<i class="fa fa-check text-white"></i>
-					</div>
-					<div class="open-test">
-						<div class="test-detail">
-							<p class="name">companyTelephoneDisplayTest</p>
-							<p class="duration text-sm">0h 0m 3s+372ms</p>
-							<span class="datetime">12:31:12 PM</span>
-						</div>
-					</div>
-					<div class="test-contents d-none">
-						<div class="detail-head">
-							<div class="p-v-10 d-inline-block">
-								<div class="info">
-									<h5 class="test-status text-pass">companyTelephoneDisplayTest</h5>
-									<span class='badge badge-success'>07.28.2020 12:31:12</span>
-									<span class='badge badge-danger'>07.28.2020 12:31:16</span>
-									<span class='badge badge-default'>0h 0m 3s+372ms</span>
-								</div>
-								<div class="m-t-10 m-l-5">
-									
-								</div>
-							</div>
-						</div>
-<div class="detail-body mt-4">                                              
-<table class="table table-sm">
-	<thead><tr>
-		<th class="status-col">Status</th>
-		<th class="timestamp-col">Timestamp</th>
-		<th class="details-col">Details</th>
-	</tr></thead>
-	<tbody>
-			<tr class="event-row">
-				<td><i class="fa fa-check text-pass"></i></td>
-				<td>12:31:16 PM</td>
-				<td>
-						Test Passed
-				</td>
-			</tr>
-	</tbody>
-</table>
-</div>
-<div class="detail-foot">
-	<ul class="attachments">
-			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\projects\POM_With_OOPs\screenshot\companyTelephoneDisplayTest.png' src='C:\projects\POM_With_OOPs\screenshot\companyTelephoneDisplayTest.png'>
-	</ul>
-</div>
-					</div>
-				</li>
-				<li class="test-item"  status="pass" test-id="6"
-					author=""
-					tag=""
-					device="">
-					<div class="status-avatar pass-bg">
-						<i class="fa fa-check text-white"></i>
-					</div>
-					<div class="open-test">
-						<div class="test-detail">
-							<p class="name">newContactPageTitleTest</p>
-							<p class="duration text-sm">0h 0m 34s+647ms</p>
-							<span class="datetime">12:31:30 PM</span>
-						</div>
-					</div>
-					<div class="test-contents d-none">
-						<div class="detail-head">
-							<div class="p-v-10 d-inline-block">
-								<div class="info">
-									<h5 class="test-status text-pass">newContactPageTitleTest</h5>
-									<span class='badge badge-success'>07.28.2020 12:31:30</span>
-									<span class='badge badge-danger'>07.28.2020 12:32:05</span>
-									<span class='badge badge-default'>0h 0m 34s+647ms</span>
-								</div>
-								<div class="m-t-10 m-l-5">
-									
-								</div>
-							</div>
-						</div>
-<div class="detail-body mt-4">                                              
-<table class="table table-sm">
-	<thead><tr>
-		<th class="status-col">Status</th>
-		<th class="timestamp-col">Timestamp</th>
-		<th class="details-col">Details</th>
-	</tr></thead>
-	<tbody>
-			<tr class="event-row">
-				<td><i class="fa fa-check text-pass"></i></td>
-				<td>12:32:05 PM</td>
-				<td>
-						Test Passed
-				</td>
-			</tr>
-	</tbody>
-</table>
-</div>
-<div class="detail-foot">
-	<ul class="attachments">
-			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\projects\POM_With_OOPs\screenshot\newContactPageTitleTest.png' src='C:\projects\POM_With_OOPs\screenshot\newContactPageTitleTest.png'>
-	</ul>
-</div>
-					</div>
-				</li>
-				<li class="test-item"  status="pass" test-id="7"
-					author=""
-					tag=""
-					device="">
-					<div class="status-avatar pass-bg">
-						<i class="fa fa-check text-white"></i>
-					</div>
-					<div class="open-test">
-						<div class="test-detail">
-							<p class="name">signUpPageLinkTest</p>
-							<p class="duration text-sm">0h 0m 11s+293ms</p>
-							<span class="datetime">12:32:09 PM</span>
-						</div>
-					</div>
-					<div class="test-contents d-none">
-						<div class="detail-head">
-							<div class="p-v-10 d-inline-block">
-								<div class="info">
-									<h5 class="test-status text-pass">signUpPageLinkTest</h5>
-									<span class='badge badge-success'>07.28.2020 12:32:09</span>
-									<span class='badge badge-danger'>07.28.2020 12:32:20</span>
-									<span class='badge badge-default'>0h 0m 11s+293ms</span>
-								</div>
-								<div class="m-t-10 m-l-5">
-									
-								</div>
-							</div>
-						</div>
-<div class="detail-body mt-4">                                              
-<table class="table table-sm">
-	<thead><tr>
-		<th class="status-col">Status</th>
-		<th class="timestamp-col">Timestamp</th>
-		<th class="details-col">Details</th>
-	</tr></thead>
-	<tbody>
-			<tr class="event-row">
-				<td><i class="fa fa-check text-pass"></i></td>
-				<td>12:32:20 PM</td>
-				<td>
-						Test Passed
-				</td>
-			</tr>
-	</tbody>
-</table>
-</div>
-<div class="detail-foot">
-	<ul class="attachments">
-			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\projects\POM_With_OOPs\screenshot\signUpPageLinkTest.png' src='C:\projects\POM_With_OOPs\screenshot\signUpPageLinkTest.png'>
-	</ul>
-</div>
-					</div>
-				</li>
-				<li class="test-item"  status="pass" test-id="8"
-					author=""
-					tag=""
-					device="">
-					<div class="status-avatar pass-bg">
-						<i class="fa fa-check text-white"></i>
-					</div>
-					<div class="open-test">
-						<div class="test-detail">
-							<p class="name">newContactPageLabelTest</p>
-							<p class="duration text-sm">0h 0m 33s+357ms</p>
-							<span class="datetime">12:32:49 PM</span>
-						</div>
-					</div>
-					<div class="test-contents d-none">
-						<div class="detail-head">
-							<div class="p-v-10 d-inline-block">
-								<div class="info">
-									<h5 class="test-status text-pass">newContactPageLabelTest</h5>
-									<span class='badge badge-success'>07.28.2020 12:32:49</span>
-									<span class='badge badge-danger'>07.28.2020 12:33:22</span>
-									<span class='badge badge-default'>0h 0m 33s+357ms</span>
-								</div>
-								<div class="m-t-10 m-l-5">
-									
-								</div>
-							</div>
-						</div>
-<div class="detail-body mt-4">                                              
-<table class="table table-sm">
-	<thead><tr>
-		<th class="status-col">Status</th>
-		<th class="timestamp-col">Timestamp</th>
-		<th class="details-col">Details</th>
-	</tr></thead>
-	<tbody>
-			<tr class="event-row">
-				<td><i class="fa fa-check text-pass"></i></td>
-				<td>12:33:22 PM</td>
-				<td>
-						Test Passed
-				</td>
-			</tr>
-	</tbody>
-</table>
-</div>
-<div class="detail-foot">
-	<ul class="attachments">
-			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\projects\POM_With_OOPs\screenshot\newContactPageLabelTest.png' src='C:\projects\POM_With_OOPs\screenshot\newContactPageLabelTest.png'>
-	</ul>
-</div>
-					</div>
-				</li>
-				<li class="test-item"  status="pass" test-id="9"
-					author=""
-					tag=""
-					device="">
-					<div class="status-avatar pass-bg">
-						<i class="fa fa-check text-white"></i>
-					</div>
-					<div class="open-test">
-						<div class="test-detail">
-							<p class="name">loginPageLinkTest</p>
-							<p class="duration text-sm">0h 0m 23s+377ms</p>
-							<span class="datetime">12:33:08 PM</span>
-						</div>
-					</div>
-					<div class="test-contents d-none">
-						<div class="detail-head">
-							<div class="p-v-10 d-inline-block">
-								<div class="info">
-									<h5 class="test-status text-pass">loginPageLinkTest</h5>
-									<span class='badge badge-success'>07.28.2020 12:33:08</span>
-									<span class='badge badge-danger'>07.28.2020 12:33:31</span>
-									<span class='badge badge-default'>0h 0m 23s+377ms</span>
-								</div>
-								<div class="m-t-10 m-l-5">
-									
-								</div>
-							</div>
-						</div>
-<div class="detail-body mt-4">                                              
-<table class="table table-sm">
-	<thead><tr>
-		<th class="status-col">Status</th>
-		<th class="timestamp-col">Timestamp</th>
-		<th class="details-col">Details</th>
-	</tr></thead>
-	<tbody>
-			<tr class="event-row">
-				<td><i class="fa fa-check text-pass"></i></td>
-				<td>12:33:31 PM</td>
-				<td>
-						Test Passed
-				</td>
-			</tr>
-	</tbody>
-</table>
-</div>
-<div class="detail-foot">
-	<ul class="attachments">
-			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\projects\POM_With_OOPs\screenshot\loginPageLinkTest.png' src='C:\projects\POM_With_OOPs\screenshot\loginPageLinkTest.png'>
-	</ul>
-</div>
-					</div>
-				</li>
-				<li class="test-item"  status="skip" test-id="10"
-					author=""
-					tag=""
-					device="">
-					<div class="status-avatar skip-bg">
-						<i class="fa fa-long-arrow-right text-white"></i>
-					</div>
-					<div class="open-test">
-						<div class="test-detail">
-							<p class="name">createNewContactTest</p>
-							<p class="duration text-sm">0h 1m 10s+948ms</p>
-							<span class="datetime">12:34:04 PM</span>
-						</div>
-					</div>
-					<div class="test-contents d-none">
-						<div class="detail-head">
-							<div class="p-v-10 d-inline-block">
-								<div class="info">
-									<h5 class="test-status text-skip">createNewContactTest</h5>
-									<span class='badge badge-success'>07.28.2020 12:34:04</span>
-									<span class='badge badge-danger'>07.28.2020 12:35:15</span>
-									<span class='badge badge-default'>0h 1m 10s+948ms</span>
-								</div>
-								<div class="m-t-10 m-l-5">
-									
-								</div>
-							</div>
-						</div>
-<div class="detail-body mt-4">                                              
-<table class="table table-sm">
-	<thead><tr>
-		<th class="status-col">Status</th>
-		<th class="timestamp-col">Timestamp</th>
-		<th class="details-col">Details</th>
-	</tr></thead>
-	<tbody>
-			<tr class="event-row">
-				<td><i class="fa fa-long-arrow-right text-skip"></i></td>
-				<td>12:35:15 PM</td>
-				<td>
-						Test Skipped
-				</td>
-			</tr>
-	</tbody>
-</table>
-</div>
-					</div>
-				</li>
-				<li class="test-item"  status="pass" test-id="11"
-					author=""
-					tag=""
-					device="">
-					<div class="status-avatar pass-bg">
-						<i class="fa fa-check text-white"></i>
-					</div>
-					<div class="open-test">
-						<div class="test-detail">
-							<p class="name">loginPageUrlTest</p>
-							<p class="duration text-sm">0h 0m 15s+778ms</p>
-							<span class="datetime">12:34:09 PM</span>
-						</div>
-					</div>
-					<div class="test-contents d-none">
-						<div class="detail-head">
-							<div class="p-v-10 d-inline-block">
-								<div class="info">
-									<h5 class="test-status text-pass">loginPageUrlTest</h5>
-									<span class='badge badge-success'>07.28.2020 12:34:09</span>
-									<span class='badge badge-danger'>07.28.2020 12:34:24</span>
-									<span class='badge badge-default'>0h 0m 15s+778ms</span>
-								</div>
-								<div class="m-t-10 m-l-5">
-									
-								</div>
-							</div>
-						</div>
-<div class="detail-body mt-4">                                              
-<table class="table table-sm">
-	<thead><tr>
-		<th class="status-col">Status</th>
-		<th class="timestamp-col">Timestamp</th>
-		<th class="details-col">Details</th>
-	</tr></thead>
-	<tbody>
-			<tr class="event-row">
-				<td><i class="fa fa-check text-pass"></i></td>
-				<td>12:34:24 PM</td>
-				<td>
-						Test Passed
-				</td>
-			</tr>
-	</tbody>
-</table>
-</div>
-<div class="detail-foot">
-	<ul class="attachments">
-			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\projects\POM_With_OOPs\screenshot\loginPageUrlTest.png' src='C:\projects\POM_With_OOPs\screenshot\loginPageUrlTest.png'>
-	</ul>
-</div>
-					</div>
-				</li>
-				<li class="test-item"  status="pass" test-id="12"
-					author=""
-					tag=""
-					device="">
-					<div class="status-avatar pass-bg">
-						<i class="fa fa-check text-white"></i>
-					</div>
-					<div class="open-test">
-						<div class="test-detail">
-							<p class="name">loginPageTitleTest</p>
-							<p class="duration text-sm">0h 0m 53s+175ms</p>
-							<span class="datetime">12:35:04 PM</span>
-						</div>
-					</div>
-					<div class="test-contents d-none">
-						<div class="detail-head">
-							<div class="p-v-10 d-inline-block">
-								<div class="info">
-									<h5 class="test-status text-pass">loginPageTitleTest</h5>
-									<span class='badge badge-success'>07.28.2020 12:35:04</span>
-									<span class='badge badge-danger'>07.28.2020 12:35:57</span>
-									<span class='badge badge-default'>0h 0m 53s+175ms</span>
-								</div>
-								<div class="m-t-10 m-l-5">
-									
-								</div>
-							</div>
-						</div>
-<div class="detail-body mt-4">                                              
-<table class="table table-sm">
-	<thead><tr>
-		<th class="status-col">Status</th>
-		<th class="timestamp-col">Timestamp</th>
-		<th class="details-col">Details</th>
-	</tr></thead>
-	<tbody>
-			<tr class="event-row">
-				<td><i class="fa fa-check text-pass"></i></td>
-				<td>12:35:57 PM</td>
-				<td>
-						Test Passed
-				</td>
-			</tr>
-	</tbody>
-</table>
-</div>
-<div class="detail-foot">
-	<ul class="attachments">
-			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\projects\POM_With_OOPs\screenshot\loginPageTitleTest.png' src='C:\projects\POM_With_OOPs\screenshot\loginPageTitleTest.png'>
-	</ul>
-</div>
-					</div>
-				</li>
-				<li class="test-item"  status="pass" test-id="13"
-					author=""
-					tag=""
-					device="">
-					<div class="status-avatar pass-bg">
-						<i class="fa fa-check text-white"></i>
-					</div>
-					<div class="open-test">
-						<div class="test-detail">
-							<p class="name">createNewContactTest</p>
-							<p class="duration text-sm">0h 1m 21s+555ms</p>
-							<span class="datetime">12:35:37 PM</span>
-						</div>
-					</div>
-					<div class="test-contents d-none">
-						<div class="detail-head">
-							<div class="p-v-10 d-inline-block">
-								<div class="info">
-									<h5 class="test-status text-pass">createNewContactTest</h5>
-									<span class='badge badge-success'>07.28.2020 12:35:37</span>
-									<span class='badge badge-danger'>07.28.2020 12:36:59</span>
-									<span class='badge badge-default'>0h 1m 21s+555ms</span>
-								</div>
-								<div class="m-t-10 m-l-5">
-									
-								</div>
-							</div>
-						</div>
-<div class="detail-body mt-4">                                              
-<table class="table table-sm">
-	<thead><tr>
-		<th class="status-col">Status</th>
-		<th class="timestamp-col">Timestamp</th>
-		<th class="details-col">Details</th>
-	</tr></thead>
-	<tbody>
-			<tr class="event-row">
-				<td><i class="fa fa-check text-pass"></i></td>
-				<td>12:36:59 PM</td>
-				<td>
-						Test Passed
-				</td>
-			</tr>
-	</tbody>
-</table>
-</div>
-<div class="detail-foot">
-	<ul class="attachments">
-			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\projects\POM_With_OOPs\screenshot\createNewContactTest.png' src='C:\projects\POM_With_OOPs\screenshot\createNewContactTest.png'>
-	</ul>
-</div>
-					</div>
-				</li>
-				<li class="test-item"  status="pass" test-id="14"
-					author=""
-					tag=""
-					device="">
-					<div class="status-avatar pass-bg">
-						<i class="fa fa-check text-white"></i>
+					<div class="status-avatar fail-bg">
+						<i class="fa fa-times text-white"></i>
 					</div>
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">customerLoginTest</p>
-							<p class="duration text-sm">0h 0m 27s+196ms</p>
-							<span class="datetime">12:36:24 PM</span>
+							<p class="duration text-sm">0h 0m 40s+954ms</p>
+							<span class="datetime">13:01:00 PM</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="detail-head">
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
-									<h5 class="test-status text-pass">customerLoginTest</h5>
-									<span class='badge badge-success'>07.28.2020 12:36:24</span>
-									<span class='badge badge-danger'>07.28.2020 12:36:51</span>
-									<span class='badge badge-default'>0h 0m 27s+196ms</span>
+									<h5 class="test-status text-fail">customerLoginTest</h5>
+									<span class='badge badge-success'>07.29.2020 13:01:00</span>
+									<span class='badge badge-danger'>07.29.2020 13:01:41</span>
+									<span class='badge badge-default'>0h 0m 40s+954ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -827,10 +151,45 @@
 	</tr></thead>
 	<tbody>
 			<tr class="event-row">
-				<td><i class="fa fa-check text-pass"></i></td>
-				<td>12:36:51 PM</td>
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>1:01:41 PM</td>
 				<td>
-						Test Passed
+						<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of any elements located by By.xpath: //span[text()='Log In']/parent::a (tried for 40 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'BDC4-L-61062ND', ip: '192.168.0.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\AKSHAY~1.SIN\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:54260}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: e350fb6ac161935e1a498284d510ab75
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.crm.qa.pages.BasePage.waitForElementVisibility(BasePage.java:27)
+	at com.crm.qa.pages.BasePage.performClick(BasePage.java:40)
+	at com.crm.qa.pages.LaunchPage.clickOnLoginPageLink(LaunchPage.java:42)
+	at com.crm.qa.testcases.LoginPageTest.customerLoginTest(LoginPageTest.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</textarea>
 				</td>
 			</tr>
 	</tbody>
@@ -843,423 +202,76 @@
 </div>
 					</div>
 				</li>
-				<li class="test-item"  status="pass" test-id="15"
-					author=""
-					tag=""
-					device="">
-					<div class="status-avatar pass-bg">
-						<i class="fa fa-check text-white"></i>
-					</div>
-					<div class="open-test">
-						<div class="test-detail">
-							<p class="name">validateResetPasswordPageLinkTest</p>
-							<p class="duration text-sm">0h 0m 22s+32ms</p>
-							<span class="datetime">12:37:31 PM</span>
-						</div>
-					</div>
-					<div class="test-contents d-none">
-						<div class="detail-head">
-							<div class="p-v-10 d-inline-block">
-								<div class="info">
-									<h5 class="test-status text-pass">validateResetPasswordPageLinkTest</h5>
-									<span class='badge badge-success'>07.28.2020 12:37:31</span>
-									<span class='badge badge-danger'>07.28.2020 12:37:53</span>
-									<span class='badge badge-default'>0h 0m 22s+32ms</span>
-								</div>
-								<div class="m-t-10 m-l-5">
-									
-								</div>
-							</div>
-						</div>
-<div class="detail-body mt-4">                                              
-<table class="table table-sm">
-	<thead><tr>
-		<th class="status-col">Status</th>
-		<th class="timestamp-col">Timestamp</th>
-		<th class="details-col">Details</th>
-	</tr></thead>
-	<tbody>
-			<tr class="event-row">
-				<td><i class="fa fa-check text-pass"></i></td>
-				<td>12:37:53 PM</td>
-				<td>
-						Test Passed
-				</td>
-			</tr>
-	</tbody>
-</table>
-</div>
-<div class="detail-foot">
-	<ul class="attachments">
-			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\projects\POM_With_OOPs\screenshot\validateResetPasswordPageLinkTest.png' src='C:\projects\POM_With_OOPs\screenshot\validateResetPasswordPageLinkTest.png'>
-	</ul>
-</div>
-					</div>
+			</ul>
+		</div>
+	</div>
+	<div class="test-content scrollable">
+		<div class="test-content-tools">
+			<ul>
+				<li>
+					<a class="back-to-test" href="javascript:void(0)">
+					<i class="fa fa-arrow-left"></i>
+					</a>
 				</li>
-				<li class="test-item"  status="skip" test-id="16"
-					author=""
-					tag=""
-					device="">
-					<div class="status-avatar skip-bg">
-						<i class="fa fa-long-arrow-right text-white"></i>
-					</div>
-					<div class="open-test">
-						<div class="test-detail">
-							<p class="name">createNewContactTest</p>
-							<p class="duration text-sm">0h 1m 6s+394ms</p>
-							<span class="datetime">12:37:36 PM</span>
-						</div>
-					</div>
-					<div class="test-contents d-none">
-						<div class="detail-head">
-							<div class="p-v-10 d-inline-block">
-								<div class="info">
-									<h5 class="test-status text-skip">createNewContactTest</h5>
-									<span class='badge badge-success'>07.28.2020 12:37:36</span>
-									<span class='badge badge-danger'>07.28.2020 12:38:42</span>
-									<span class='badge badge-default'>0h 1m 6s+394ms</span>
-								</div>
-								<div class="m-t-10 m-l-5">
-									
-								</div>
-							</div>
-						</div>
-<div class="detail-body mt-4">                                              
-<table class="table table-sm">
-	<thead><tr>
-		<th class="status-col">Status</th>
-		<th class="timestamp-col">Timestamp</th>
-		<th class="details-col">Details</th>
-	</tr></thead>
-	<tbody>
-			<tr class="event-row">
-				<td><i class="fa fa-long-arrow-right text-skip"></i></td>
-				<td>12:38:42 PM</td>
-				<td>
-						Test Skipped
-				</td>
-			</tr>
-	</tbody>
-</table>
-</div>
-					</div>
+			</ul>
+		</div>
+		<div class="test-content-detail">
+			<div class="detail-body"></div>
+		</div>
+	</div>
+</div><div class="test-wrapper row exception-view attributes-view">
+	<div class="test-list">
+		<div class="test-list-tools">
+			<ul class="tools pull-left">
+				<li>
+					<a href="">
+					<span class="font-size-14">Exception</span>
+					</a>
 				</li>
-				<li class="test-item"  status="pass" test-id="17"
-					author=""
-					tag=""
-					device="">
-					<div class="status-avatar pass-bg">
-						<i class="fa fa-check text-white"></i>
-					</div>
-					<div class="open-test">
-						<div class="test-detail">
-							<p class="name">contactsPageUrlTest</p>
-							<p class="duration text-sm">0h 1m 4s+616ms</p>
-							<span class="datetime">12:38:24 PM</span>
-						</div>
-					</div>
-					<div class="test-contents d-none">
-						<div class="detail-head">
-							<div class="p-v-10 d-inline-block">
-								<div class="info">
-									<h5 class="test-status text-pass">contactsPageUrlTest</h5>
-									<span class='badge badge-success'>07.28.2020 12:38:24</span>
-									<span class='badge badge-danger'>07.28.2020 12:39:29</span>
-									<span class='badge badge-default'>0h 1m 4s+616ms</span>
-								</div>
-								<div class="m-t-10 m-l-5">
-									
-								</div>
-							</div>
-						</div>
-<div class="detail-body mt-4">                                              
-<table class="table table-sm">
-	<thead><tr>
-		<th class="status-col">Status</th>
-		<th class="timestamp-col">Timestamp</th>
-		<th class="details-col">Details</th>
-	</tr></thead>
-	<tbody>
-			<tr class="event-row">
-				<td><i class="fa fa-check text-pass"></i></td>
-				<td>12:39:29 PM</td>
-				<td>
-						Test Passed
-				</td>
-			</tr>
-	</tbody>
-</table>
-</div>
-<div class="detail-foot">
-	<ul class="attachments">
-			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\projects\POM_With_OOPs\screenshot\contactsPageUrlTest.png' src='C:\projects\POM_With_OOPs\screenshot\contactsPageUrlTest.png'>
-	</ul>
-</div>
-					</div>
+			</ul>
+			<ul class="tools text-right">
+				<li>
+					<a href="#">
+					<span class="badge badge-primary">1</span>
+					</a>
 				</li>
-				<li class="test-item"  status="pass" test-id="18"
-					author=""
-					tag=""
-					device="">
-					<div class="status-avatar pass-bg">
-						<i class="fa fa-check text-white"></i>
-					</div>
+			</ul>
+		</div>
+		<div class="test-list-wrapper scrollable">
+			<ul class="test-list-item">
+				<li class="test-item">
 					<div class="open-test">
 						<div class="test-detail">
-							<p class="name">createNewContactTest</p>
-							<p class="duration text-sm">0h 1m 18s+141ms</p>
-							<span class="datetime">12:39:31 PM</span>
+							<p class="name">org.openqa.selenium.TimeoutException</p>
+							<p class="duration text-sm">1 tests</p>
 						</div>
 					</div>
 					<div class="test-contents d-none">
-						<div class="detail-head">
-							<div class="p-v-10 d-inline-block">
-								<div class="info">
-									<h5 class="test-status text-pass">createNewContactTest</h5>
-									<span class='badge badge-success'>07.28.2020 12:39:31</span>
-									<span class='badge badge-danger'>07.28.2020 12:40:49</span>
-									<span class='badge badge-default'>0h 1m 18s+141ms</span>
-								</div>
-								<div class="m-t-10 m-l-5">
-									
-								</div>
-							</div>
+						<div class="info">
+							<h4>org.openqa.selenium.TimeoutException</h4>
 						</div>
-<div class="detail-body mt-4">                                              
-<table class="table table-sm">
-	<thead><tr>
-		<th class="status-col">Status</th>
-		<th class="timestamp-col">Timestamp</th>
-		<th class="details-col">Details</th>
-	</tr></thead>
-	<tbody>
-			<tr class="event-row">
-				<td><i class="fa fa-check text-pass"></i></td>
-				<td>12:40:49 PM</td>
-				<td>
-						Test Passed
-				</td>
-			</tr>
-	</tbody>
-</table>
-</div>
-<div class="detail-foot">
-	<ul class="attachments">
-			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\projects\POM_With_OOPs\screenshot\createNewContactTest.png' src='C:\projects\POM_With_OOPs\screenshot\createNewContactTest.png'>
-	</ul>
-</div>
-					</div>
-				</li>
-				<li class="test-item"  status="pass" test-id="19"
-					author=""
-					tag=""
-					device="">
-					<div class="status-avatar pass-bg">
-						<i class="fa fa-check text-white"></i>
-					</div>
-					<div class="open-test">
-						<div class="test-detail">
-							<p class="name">contactsPageTitleTest</p>
-							<p class="duration text-sm">0h 0m 33s+488ms</p>
-							<span class="datetime">12:40:23 PM</span>
-						</div>
-					</div>
-					<div class="test-contents d-none">
-						<div class="detail-head">
-							<div class="p-v-10 d-inline-block">
-								<div class="info">
-									<h5 class="test-status text-pass">contactsPageTitleTest</h5>
-									<span class='badge badge-success'>07.28.2020 12:40:23</span>
-									<span class='badge badge-danger'>07.28.2020 12:40:57</span>
-									<span class='badge badge-default'>0h 0m 33s+488ms</span>
-								</div>
-								<div class="m-t-10 m-l-5">
-									
-								</div>
-							</div>
-						</div>
-<div class="detail-body mt-4">                                              
-<table class="table table-sm">
-	<thead><tr>
-		<th class="status-col">Status</th>
-		<th class="timestamp-col">Timestamp</th>
-		<th class="details-col">Details</th>
-	</tr></thead>
-	<tbody>
-			<tr class="event-row">
-				<td><i class="fa fa-check text-pass"></i></td>
-				<td>12:40:57 PM</td>
-				<td>
-						Test Passed
-				</td>
-			</tr>
-	</tbody>
-</table>
-</div>
-<div class="detail-foot">
-	<ul class="attachments">
-			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\projects\POM_With_OOPs\screenshot\contactsPageTitleTest.png' src='C:\projects\POM_With_OOPs\screenshot\contactsPageTitleTest.png'>
-	</ul>
-</div>
-					</div>
-				</li>
-				<li class="test-item"  status="pass" test-id="20"
-					author=""
-					tag=""
-					device="">
-					<div class="status-avatar pass-bg">
-						<i class="fa fa-check text-white"></i>
-					</div>
-					<div class="open-test">
-						<div class="test-detail">
-							<p class="name">contactsPageLabelTest</p>
-							<p class="duration text-sm">0h 0m 40s+959ms</p>
-							<span class="datetime">12:41:33 PM</span>
-						</div>
-					</div>
-					<div class="test-contents d-none">
-						<div class="detail-head">
-							<div class="p-v-10 d-inline-block">
-								<div class="info">
-									<h5 class="test-status text-pass">contactsPageLabelTest</h5>
-									<span class='badge badge-success'>07.28.2020 12:41:33</span>
-									<span class='badge badge-danger'>07.28.2020 12:42:14</span>
-									<span class='badge badge-default'>0h 0m 40s+959ms</span>
-								</div>
-								<div class="m-t-10 m-l-5">
-									
-								</div>
-							</div>
-						</div>
-<div class="detail-body mt-4">                                              
-<table class="table table-sm">
-	<thead><tr>
-		<th class="status-col">Status</th>
-		<th class="timestamp-col">Timestamp</th>
-		<th class="details-col">Details</th>
-	</tr></thead>
-	<tbody>
-			<tr class="event-row">
-				<td><i class="fa fa-check text-pass"></i></td>
-				<td>12:42:14 PM</td>
-				<td>
-						Test Passed
-				</td>
-			</tr>
-	</tbody>
-</table>
-</div>
-<div class="detail-foot">
-	<ul class="attachments">
-			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\projects\POM_With_OOPs\screenshot\contactsPageLabelTest.png' src='C:\projects\POM_With_OOPs\screenshot\contactsPageLabelTest.png'>
-	</ul>
-</div>
-					</div>
-				</li>
-				<li class="test-item"  status="pass" test-id="21"
-					author=""
-					tag=""
-					device="">
-					<div class="status-avatar pass-bg">
-						<i class="fa fa-check text-white"></i>
-					</div>
-					<div class="open-test">
-						<div class="test-detail">
-							<p class="name">createNewContactTest</p>
-							<p class="duration text-sm">0h 1m 8s+697ms</p>
-							<span class="datetime">12:42:00 PM</span>
-						</div>
-					</div>
-					<div class="test-contents d-none">
-						<div class="detail-head">
-							<div class="p-v-10 d-inline-block">
-								<div class="info">
-									<h5 class="test-status text-pass">createNewContactTest</h5>
-									<span class='badge badge-success'>07.28.2020 12:42:00</span>
-									<span class='badge badge-danger'>07.28.2020 12:43:08</span>
-									<span class='badge badge-default'>0h 1m 8s+697ms</span>
-								</div>
-								<div class="m-t-10 m-l-5">
-									
-								</div>
-							</div>
-						</div>
-<div class="detail-body mt-4">                                              
-<table class="table table-sm">
-	<thead><tr>
-		<th class="status-col">Status</th>
-		<th class="timestamp-col">Timestamp</th>
-		<th class="details-col">Details</th>
-	</tr></thead>
-	<tbody>
-			<tr class="event-row">
-				<td><i class="fa fa-check text-pass"></i></td>
-				<td>12:43:08 PM</td>
-				<td>
-						Test Passed
-				</td>
-			</tr>
-	</tbody>
-</table>
-</div>
-<div class="detail-foot">
-	<ul class="attachments">
-			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\projects\POM_With_OOPs\screenshot\createNewContactTest.png' src='C:\projects\POM_With_OOPs\screenshot\createNewContactTest.png'>
-	</ul>
-</div>
-					</div>
-				</li>
-				<li class="test-item"  status="pass" test-id="22"
-					author=""
-					tag=""
-					device="">
-					<div class="status-avatar pass-bg">
-						<i class="fa fa-check text-white"></i>
-					</div>
-					<div class="open-test">
-						<div class="test-detail">
-							<p class="name">selectDesiredContactTest</p>
-							<p class="duration text-sm">0h 0m 36s+506ms</p>
-							<span class="datetime">12:42:39 PM</span>
-						</div>
-					</div>
-					<div class="test-contents d-none">
-						<div class="detail-head">
-							<div class="p-v-10 d-inline-block">
-								<div class="info">
-									<h5 class="test-status text-pass">selectDesiredContactTest</h5>
-									<span class='badge badge-success'>07.28.2020 12:42:39</span>
-									<span class='badge badge-danger'>07.28.2020 12:43:15</span>
-									<span class='badge badge-default'>0h 0m 36s+506ms</span>
-								</div>
-								<div class="m-t-10 m-l-5">
-									
-								</div>
-							</div>
-						</div>
-<div class="detail-body mt-4">                                              
-<table class="table table-sm">
-	<thead><tr>
-		<th class="status-col">Status</th>
-		<th class="timestamp-col">Timestamp</th>
-		<th class="details-col">Details</th>
-	</tr></thead>
-	<tbody>
-			<tr class="event-row">
-				<td><i class="fa fa-check text-pass"></i></td>
-				<td>12:43:15 PM</td>
-				<td>
-						Test Passed
-				</td>
-			</tr>
-	</tbody>
-</table>
-</div>
-<div class="detail-foot">
-	<ul class="attachments">
-			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\projects\POM_With_OOPs\screenshot\selectDesiredContactTest.png' src='C:\projects\POM_With_OOPs\screenshot\selectDesiredContactTest.png'>
-	</ul>
-</div>
+						<table class='table table-sm mt-4'>
+							<thead>
+								<tr>
+									<th class="status-col">Status</th>
+									<th class="timestamp-col">Timestamp</th>
+									<th>TestName</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<div class='status-avatar fail-bg'>
+											<i class="fa fa-times text-white"></i>
+										</div>
+									</td>
+									<td>13:01:00 PM</td>
+									<td class='linked' test-id='1'>
+										customerLoginTest
+									</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 				</li>
 			</ul>
@@ -1293,13 +305,13 @@
 					</div>
 				</div>
 				<div class="card-footer">
-					<div><small data-tooltip='90.909%'>
-						<b>20</b> tests passed
+					<div><small data-tooltip='0%'>
+						<b>0</b> tests passed
 						</small>
 					</div>
 					<div>
-						<small data-tooltip='0%'><b>0</b> tests failed, 
-						<b>2</b> skipped, <b data-tooltip='0%'>0</b> others
+						<small data-tooltip='100%'><b>1</b> tests failed, 
+						<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 						</small>
 					</div>
 				</div>
@@ -1316,10 +328,10 @@
 					</div>
 				</div>
 				<div class="card-footer">
-					<div><small data-tooltip='90.909%'><b>20</b> events passed</small></div>
+					<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
 					<div>
-						<small data-tooltip='0%'><b>0</b> events failed, 
-						<b data-tooltip='9.091%'>2</b> others
+						<small data-tooltip='100%'><b>1</b> events failed, 
+						<b data-tooltip='0%'>0</b> others
 						</small>
 					</div>
 				</div>
@@ -1333,10 +345,10 @@
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Tests</h6>
-							<h2 class="font-size-28 font-weight-light mt-3">22</h2>
+							<h2 class="font-size-28 font-weight-light mt-3">1</h2>
 							<span class="text-semibold text-success font-size-15">
 							<i class="ti-arrow-up font-size-11"></i> 
-							<span>90.91%</span>
+							<span>.00%</span>
 							</span>
 						</div>
 						<div class="align-self-end">
@@ -1352,7 +364,7 @@
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Start</h6>
-							<h4 class="font-weight-light mt-4">Jul 28, 2020 12:29:03 PM</h4>
+							<h4 class="font-weight-light mt-4">Jul 29, 2020 12:59:28 PM</h4>
 							<span class="text-semibold text-success font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -1368,7 +380,7 @@
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Duration</h6>
-							<h4 class="font-weight-light mt-4">0h 14m 13s+356ms</h4>
+							<h4 class="font-weight-light mt-4">0h 2m 18s+852ms</h4>
 							<span class="text-semibold font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -1421,14 +433,14 @@
 </div>
 <script>
 	var statusGroup = {
-	    parentCount: 22,
-		passParent: 20,
-		failParent: 0,
+	    parentCount: 1,
+		passParent: 0,
+		failParent: 1,
 		fatalParent: 0,
 		errorParent: 0,
 		warningParent: 0,
-		skipParent: 2,
-		exceptionsParent: 2,
+		skipParent: 0,
+		exceptionsParent: 1,
 		childCount: 0,
 		passChild: 0,
 		failChild: 0,
@@ -1449,13 +461,13 @@
 		infoGrandChild: 0,
 		debugGrandChild: 0,
 		exceptionsGrandChild: 0,
-		eventsCount: 22,
-		passEvents: 20,
-		failEvents: 0,
+		eventsCount: 1,
+		passEvents: 0,
+		failEvents: 1,
 		fatalEvents: 0,
 		errorEvents: 0,
 		warningEvents: 0,
-		skipEvents: 2,
+		skipEvents: 0,
 		infoEvents: 0,
 		debugEvents: 0,
 		exceptionsEvents: 0
@@ -1463,7 +475,7 @@
 </script>
 <script>
 	var timeline = {
-	        "launchPageUrlTest":1.207,"newContactPageUrlTest":67.416,"launchPageTitleTest":0.682,"companyLogoDisplayTest":2.47,"companyTelephoneDisplayTest":3.372,"newContactPageTitleTest":34.647,"signUpPageLinkTest":11.293,"newContactPageLabelTest":33.357,"loginPageLinkTest":23.377,"createNewContactTest":70.948,"loginPageUrlTest":15.778,"loginPageTitleTest":53.175,"createNewContactTest":81.555,"customerLoginTest":27.196,"validateResetPasswordPageLinkTest":22.032,"createNewContactTest":66.394,"contactsPageUrlTest":64.616,"createNewContactTest":78.141,"contactsPageTitleTest":33.488,"contactsPageLabelTest":40.959,"createNewContactTest":68.697,"selectDesiredContactTest":36.506
+	        "customerLoginTest":40.954
 	};
 </script>
                 </div>

@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import com.crm.qa.testdata.FreeCrmTestData;
+import com.crm.qa.util.JsExecutorUtil;
 
 public class LoginPage extends BasePage {
 
@@ -34,9 +35,22 @@ public class LoginPage extends BasePage {
 	public HomePage customerLogin() {
 		String loginInfo = FreeCrmTestData.getUserLoginInfo().get("customer");
 		String[] credentials = loginInfo.split("_");
-
+        
+		JsExecutorUtil.flash(drivers.get(), getObject(email));
 		populateField(email, credentials[0]);
+		JsExecutorUtil.flash(drivers.get(), getObject(password));
 		populateField(password, credentials[1]);
+		JsExecutorUtil.flash(drivers.get(), getObject(loginBtn));
+		performClick(loginBtn);
+		return getPageInstance(HomePage.class);
+	}
+	
+	public HomePage customerLogin(String un, String pwd) {        
+		JsExecutorUtil.flash(drivers.get(), getObject(email));
+		populateField(email, un);
+		JsExecutorUtil.flash(drivers.get(), getObject(password));
+		populateField(password, pwd);
+		JsExecutorUtil.flash(drivers.get(), getObject(loginBtn));
 		performClick(loginBtn);
 		return getPageInstance(HomePage.class);
 	}

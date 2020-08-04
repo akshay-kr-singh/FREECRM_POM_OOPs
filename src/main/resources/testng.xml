@@ -5,16 +5,14 @@
 	<listeners>
 		<listener class-name="com.crm.qa.util.TestNGBasicListener" />
 	</listeners>
-	<test name="LaunchPageTest" parallel="tests" thread-count="2">
-		<parameter name="browserName" value="chromeheadless" />
+	<test name="LoginPageTest" parallel="tests" thread-count="2">
+		<parameter name="browserName" value="chrome" />
 		<classes>
-			<class name="com.crm.qa.testcases.LaunchPageTest" />
-		</classes>
-	</test>
-		<test name="NewContactPageTest" parallel="tests" thread-count="2">
-		<parameter name="browserName" value="chromeheadless" />
-		<classes>
-			<class name="com.crm.qa.testcases.NewContactPageTest" />
+			<class name="com.crm.qa.testcases.LoginPageTest">
+				<methods>
+					<include name="customerLoginTest" />
+				</methods>
+			</class>
 		</classes>
 	</test>
 </suite>

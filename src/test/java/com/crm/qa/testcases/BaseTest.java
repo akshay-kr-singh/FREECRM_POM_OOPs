@@ -10,12 +10,15 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
+import org.testng.ITestContext;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 
 import com.crm.qa.pages.BasePage;
 import com.crm.qa.pages.Page;
+import com.crm.qa.util.DataFetcher;
 import com.crm.qa.util.WebEventListener;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -23,11 +26,12 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class BaseTest {
 
 	public WebDriver driver;
+	public ThreadLocal<WebDriver> drivers = new ThreadLocal<>();
 //	private EventFiringWebDriver e_driver;
 //	private WebEventListener eventListener;	
 	public Properties prop;
 	public Page page;
-	ThreadLocal<WebDriver> drivers = new ThreadLocal<>();
+	public String environment;
 
 	public BaseTest() {
 		prop = new Properties();
@@ -41,19 +45,20 @@ public class BaseTest {
 		}
 	}
 
-	@Parameters({ "browserName" })
+	@Parameters({ "browserName","environment", "pageLoadTime", "implicitWaitTime" })
 	@BeforeMethod
-	public synchronized void setUp(String browserName) {
-		if (browserName.contains("chrome")) {
+	public synchronized void setUp(String browserName, String environment, String pageLoadTime, String implicitWaitTime) {
+		this.environment = environment;
+		if (browserName.toUpperCase().contains("CHROME")) {
 			WebDriverManager.chromedriver().setup();
 			ChromeOptions options = new ChromeOptions();
-			if (browserName.contains("headless"))
+			if (browserName.toUpperCase().contains("HEADLESS"))
 				options.addArguments("headless");
 			driver = new ChromeDriver(options);
-		} else if (browserName.equalsIgnoreCase("firefox")) {
+		} else if (browserName.toUpperCase().equalsIgnoreCase("FF")) {
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
-		} else if (browserName.equalsIgnoreCase("ie")) {
+		} else if (browserName.toUpperCase().equalsIgnoreCase("IE")) {
 			WebDriverManager.iedriver().setup();
 			driver = new InternetExplorerDriver();
 		}
@@ -69,15 +74,23 @@ public class BaseTest {
 		page = new BasePage(drivers.get());
 
 		drivers.get().manage().deleteAllCookies();
-		drivers.get().manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
-		drivers.get().manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		drivers.get().manage().timeouts().pageLoadTimeout(Integer.parseInt(pageLoadTime), TimeUnit.SECONDS);
+		drivers.get().manage().timeouts().implicitlyWait(Integer.parseInt(implicitWaitTime), TimeUnit.SECONDS);
 		drivers.get().manage().window().maximize();
-		drivers.get().get(prop.getProperty("url"));
+//		drivers.get().get(prop.getProperty("url"));
 	}
 
 	@AfterMethod
 	public synchronized void tearDown() {
 		driver.quit();
+	}
+
+	@DataProvider(name="DataSheet")
+	public static Object[][] scriptTestDataFromExcel(ITestContext context) {
+		DataFetcher dataFetcher = new DataFetcher();
+		return dataFetcher.readDataFromExcel(
+				System.getProperty("user.dir") + context.getCurrentXmlTest().getParameter("dataSheet"),
+				context.getCurrentXmlTest().getParameter("environment").toUpperCase());
 	}
 
 }

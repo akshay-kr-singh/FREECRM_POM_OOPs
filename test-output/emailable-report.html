@@ -8,21 +8,17 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">FreeCrmAutomationTestSuite</th></tr>
-<tr><td><a href="#t0">LoginPageTest</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">256,185</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">ContactsPageTest</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">316,888</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">8</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num">573,073</th><th colspan="2"></th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">NewContactPageTest</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">4,693</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">FreeCrmAutomationTestSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">LoginPageTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.crm.qa.testcases.LoginPageTest</td><td><a href="#m0">customerLoginTest</a></td><td rowspan="1">1595919984409</td><td rowspan="1">27168</td></tr><tr class="passedeven"><td><a href="#m1">loginPageTitleTest</a></td><td rowspan="1">1595919904201</td><td rowspan="1">53146</td></tr><tr class="passedeven"><td><a href="#m2">loginPageUrlTest</a></td><td rowspan="1">1595919849096</td><td rowspan="1">15749</td></tr><tr class="passedeven"><td><a href="#m3">validateResetPasswordPageLinkTest</a></td><td rowspan="1">1595920051368</td><td rowspan="1">21994</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">ContactsPageTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.crm.qa.testcases.ContactsPageTest</td><td><a href="#m4">contactsPageLabelTest</a></td><td rowspan="1">1595920293707</td><td rowspan="1">40930</td></tr><tr class="passedeven"><td><a href="#m5">contactsPageTitleTest</a></td><td rowspan="1">1595920223785</td><td rowspan="1">33485</td></tr><tr class="passedeven"><td><a href="#m6">contactsPageUrlTest</a></td><td rowspan="1">1595920104572</td><td rowspan="1">64580</td></tr><tr class="passedeven"><td><a href="#m7">selectDesiredContactTest</a></td><td rowspan="1">1595920359001</td><td rowspan="1">36484</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">NewContactPageTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.crm.qa.testcases.NewContactPageTest</td><td><a href="#m0">createNewContactTest</a></td><td rowspan="1">1596536816448</td><td rowspan="1">4561</td></tr></tbody>
 </table>
-<h2>LoginPageTest</h2><h3 id="m0">com.crm.qa.testcases.LoginPageTest#customerLoginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.crm.qa.testcases.LoginPageTest#loginPageTitleTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.crm.qa.testcases.LoginPageTest#loginPageUrlTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.crm.qa.testcases.LoginPageTest#validateResetPasswordPageLinkTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>ContactsPageTest</h2><h3 id="m4">com.crm.qa.testcases.ContactsPageTest#contactsPageLabelTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.crm.qa.testcases.ContactsPageTest#contactsPageTitleTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">com.crm.qa.testcases.ContactsPageTest#contactsPageUrlTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">com.crm.qa.testcases.ContactsPageTest#selectDesiredContactTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>NewContactPageTest</h2><h3 id="m0">com.crm.qa.testcases.NewContactPageTest#createNewContactTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.internal.reflect.MethodMatcherException: 
+[private void com.crm.qa.testcases.NewContactPageTest.createNewContactTest(com.crm.qa.util.DataTable,java.lang.String)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: createNewContactTest([Parameter{index=0, type=com.crm.qa.util.DataTable, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [(com.crm.qa.util.DataTable) com.crm.qa.util.DataTable@3370f42]
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

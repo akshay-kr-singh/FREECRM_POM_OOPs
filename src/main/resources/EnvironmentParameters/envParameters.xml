@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<environments>
+	<environment id="qa">
+		<freeCrmUrl>https://freecrm.co.in/</freeCrmUrl>
+		<freeCrmUserName>akshay.yy180@gmail.com</freeCrmUserName>
+		<freeCrmPassword>Test@123</freeCrmPassword>
+	</environment>
+	<environment id="dev">
+		<freeCrmUrl>https://freecrm.co.in/</freeCrmUrl>
+		<freeCrmUserName>akshay.yy180@gmail.com</freeCrmUserName>
+		<freeCrmPassword>Test@123</freeCrmPassword>
+	</environment>
+</environments>

@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [FreeCrmAutomationTestSuite]" parallel="tests">
-  <test thread-count="2" name="NewContactPageTest(failed)" parallel="tests">
+  <listeners>
+    <listener class-name="com.crm.qa.util.TestNGBasicListener"/>
+  </listeners>
+  <test thread-count="2" name="LoginPageTest(failed)" parallel="tests">
     <parameter name="browserName" value="chrome"/>
     <classes>
-      <class name="com.crm.qa.testcases.NewContactPageTest">
+      <class name="com.crm.qa.testcases.LoginPageTest">
         <methods>
-          <include name="createNewContactTest" invocation-numbers="1 2"/>
           <include name="tearDown"/>
+          <include name="customerLoginTest"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.crm.qa.testcases.NewContactPageTest -->
+      </class> <!-- com.crm.qa.testcases.LoginPageTest -->
     </classes>
-  </test> <!-- NewContactPageTest(failed) -->
+  </test> <!-- LoginPageTest(failed) -->
 </suite> <!-- Failed suite [FreeCrmAutomationTestSuite] -->
